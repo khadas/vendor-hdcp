@@ -9,7 +9,9 @@ else
 LOCAL_SRC_FILES := bin64/tee_hdcp
 endif
 
+LOCAL_INIT_RC := tee_hdcp.rc
+
 LOCAL_MODULE := tee_hdcp
 LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/system/bin
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/vendor/bin
 include $(BUILD_PREBUILT)
